@@ -1,0 +1,61 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(59,59,115);
+background: linear-gradient(90deg, rgba(59,59,115,1) 0%, rgba(57,51,163,1) 0%, rgba(124,118,199,1) 0%, rgba(114,125,203,1) 0%, rgba(206,247,255,1) 100%);
+    overflow-y: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clock{
+    margin-top: 40px;
+    height: 50vw;
+    width: 50vw;
+    background: center/cover url("https://i.postimg.cc/BvCQqhj0/images.png") no-repeat;
+    background-size: 113%;
+    position: relative;
+    filter: invert(100);
+    border: 5px solid var(--c);
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #555,
+    -5px -5px 10px #555;
+
+}
+.hour{
+    height: 13vw;
+    width: 5px;
+    background-color:  #0000ff;
+    color: red;
+    position: absolute;
+    top: 24.5%;
+    left: 49.7%;
+    transform-origin: bottom;
+    border-radius: 25%;
+}
+
+.min{
+    height: 18vw;
+    width: 3px;
+    position: absolute;
+    top: 14.5%;
+    left: 49.7%;
+    transform-origin: bottom;
+    border-radius: 25%;
+    background-color: #0000ff;
+}
+.sec{
+    height: 20vw;
+    width: 1px;
+    position: absolute;
+    top: 10.5%;
+    left: 50%;
+    transform-origin: bottom;
+    background-color: blue;
+    border-radius: 25%;
+}
